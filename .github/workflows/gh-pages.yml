@@ -1,0 +1,16 @@
+name: github pages
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: build
+          run: |
+            sudo apt-get install python3-sphinx
+            make -C doc
