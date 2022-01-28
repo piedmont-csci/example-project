@@ -13,4 +13,4 @@ jobs:
       - name: build
         run: |
             sudo apt-get install python3-sphinx
-            make -C doc
+            make -C doc html
