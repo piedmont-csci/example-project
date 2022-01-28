@@ -11,6 +11,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: build
-          run: |
+        run: |
             sudo apt-get install python3-sphinx
             make -C doc
