@@ -16,6 +16,8 @@ jobs:
             make -C doc html
             mkdir _site
             ln -s doc/_build/html _site/doc
+            ls _site
+            ls _site/doc
       - name: deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
