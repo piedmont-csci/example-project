@@ -15,7 +15,7 @@ jobs:
             sudo apt-get install python3-sphinx
             make -C doc html
             mkdir _site
-            cp -r doc/build/html _site/doc
+            ln -s doc/_build/html _site/doc
       - name: deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
