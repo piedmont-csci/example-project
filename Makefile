@@ -5,4 +5,4 @@ all:
 	cd _site && ln -s ../doc/_build/html doc
 	git submodule update --init reveal.js
 	cd _site && ln -s ../reveal.js slides
-	ls _site/slides
+	cd _site && ln -s ../index.html index.html
