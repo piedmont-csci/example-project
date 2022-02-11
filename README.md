@@ -23,3 +23,17 @@ We can make a list:
   - more sublist
     - is this a subsublist?
     - let's found out!
+
+
+We can have syntax-highlighted code:
+
+```python
+def foo():
+    print("Hello, world!")
+```
+
+```javascript
+function foo () {
+    console.log("Hello, world!");
+}
+```
